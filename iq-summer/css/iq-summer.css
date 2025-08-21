@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap');
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+* {	
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;	
+}
+
+
+img {
+    object-fit: contain;
+  width: 100%;
+}
+
+.summer {
+   font-family: 'IBM Plex Sans', sans-serif; 
+   color: #333333;
+   font-weight: normal;
+   width: 985px;
+    margin: 0 auto;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:1000px) {
+    .summer {
+        width: 100%;
+    }
+
+    
+}
+
+.summer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;
+    font-weight: normal;
+    line-height: 60px;
+    padding-bottom:30px;
+    padding-left: 30px;
+}
+
+.summer h3 {
+    font-weight: 500;
+font-size: 24px;
+line-height: 31px;
+}
+
+.summer p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin:auto;
+    transition: 0.3s;
+}
+
+
+.gray {
+    background:#F5F5F5;
+    height: 15em;
+    width: 60%;
+    margin-left: auto;
+    display:none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top:60px;
+    background: 
+    linear-gradient(to top, white 57px, transparent 0),
+    linear-gradient(to right, white 20%, transparent 0),
+    linear-gradient(to top, #c5d0d6 65%, transparent 0),
+    linear-gradient(to right, transparent 55%, #F5F5F5 45%);
+           
+    /* linear-gradient(to right, white 36%, transparent 0),        
+        linear-gradient(to top, white 36%, transparent 0),
+        linear-gradient(to left, #c5d0d6 80%, transparent 50%),
+        linear-gradient(to bottom, #F5F5F5 36%, transparent 0) */
+        
+        
+        
+    /* background-color:#c5d0d6; */
+    /* background-image: url(../img/darkgray.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin-top: -150px; */
+}
+
+.header img.woman1 {
+    display:none;
+}
+
+.header .lad {
+    width:50%;
+    
+}
+
+
+
+.header ul li {
+    font-size: 18px;
+    line-height: 28px;
+    color:#EC6607;
+    list-style-type: disc;
+}
+
+.header ul li span {
+    color:#333333;
+    margin-left: -5px;
+}
+
+.summer ul li b a, .list ol li b a, .summer ul li b, .list ol li b {
+    color:#EC6607;
+    font-weight: 500;
+}
+
+.brands {
+    margin-top: 40px;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.brands img {
+    
+}
+
+.action-date {
+    display:flex;
+    justify-content: space-between;
+}
+
+.action-date div:first-child {
+    margin-top:20px;
+}
+
+.chat-bot  {
+    position: relative;
+    display:block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #333333;
+    border: 2px solid #F37021;
+    width: 200px;
+    padding: 15px 25px;
+    transition: 0.3s;
+    
+}
+
+.chat-bot:hover {
+    border: 2px solid #333333;
+    transition: 0.3s;
+}
+
+.chat-bot svg {
+    fill:#000;
+    width:93px; 
+    height:20px;
+    transition: 0.3s;
+    position: absolute;
+    right: -40px;
+    top: 35%;
+}
+
+.chat-bot:hover p {
+    transform: scale(1);
+     transition: 0.3s;
+}
+
+.chat-bot:hover svg, 
+.chat-bot:hover p {
+    fill:#F37021;
+    transform: scale(1.2);
+    color:#F37021;
+    transition: 0.3s;
+}
+
+.action-date .date {
+    background: #F5F5F5;
+    font-size: 18px;
+    line-height: 28px;
+    color: #EC6607;
+    font-weight: normal;
+    padding: 40px 10px 0 100px;
+}
+
+ .notes {
+    margin-top:30px;
+    margin-bottom:0;
+    font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+width:600px;
+}
+
+/*----  Блоки с отступом ----*/
+
+.steps, .pizza, .podarki, .iphone, .paper, .heart {
+    display:flex;
+}
+
+.steps, .pizza, .podarki, .iphone {
+    margin-top:100px;
+}
+
+ .paper, .heart {
+    margin-top:0px;
+    display:flex;
+}
+
+.steps img {
+    align-self: center;
+}
+
+.qr {
+    
+}
+
+.list {
+    background: #F4F4F4;
+    padding: 70px;
+}
+
+.list ol {
+	list-style-type: none; 
+	counter-reset: num;
+	padding: 15px 0 5px 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.list ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 28px 0;
+	line-height: 1.4;
+    display:flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+.list ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	/*display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;*/
+	width: 60px;
+	height: 60px;
+	background: #F37021;
+	color: #fff;
+	text-align: center;
+	line-height: 62px;
+    font-size: 24px;
+	border-radius: 50%;
+	flex: 0 0 60px;
+}
+
+.list ol li span {
+    padding-left:20px;
+}
+
+.border {
+    font-weight: 500;
+font-size: 24px;
+line-height: 31px;
+border: 1px solid #CECECF;
+display:inline-block;
+padding:12px;
+color: #333333;
+}
+
+.pizza {
+    justify-content: space-between;
+    background-image: url(/medias/sys_master/root/ha6/h97/10789961433118/background-lightgray.png);
+    background-repeat: no-repeat;
+    background-position: 29% 100%;
+}
+
+.pizza p.or {
+    display:inline-block;
+    margin:0 10px;
+}
+
+.pizza  p:not(.or) {
+    margin-bottom: 70px;
+}
+
+.podarki {
+    justify-content: space-between;
+}
+
+.podarki img {
+    width:100%;
+}
+
+.podarki > div {
+    width:32%;
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+}
+
+.podarki  h3 {
+    margin:25px 25px 10px;
+}
+
+.podarki  p {
+    margin:0 25px 30px;
+}
+
+.podarki > div > div {
+    margin:auto 0 25px 25px;
+}
+
+.iphone {
+    justify-content: space-between;
+    background-image: url(/medias/sys_master/root/ha6/h97/10789961433118/background-lightgray.png);
+    background-repeat: no-repeat;
+    background-position: 45% 100%;
+    padding-bottom: 45px;
+    background-size: 85% 82%;
+}
+
+.iphone h3 {
+    margin-top: 18px;
+}
+
+.iphone > div, .iphone > img {
+    width:48%;
+    align-self: flex-start;
+}
+
+.iphone .chat-bot {
+    width:320px;
+    margin-top: 54px;
+}
+
+.bottom-block h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.bottom-block {
+    width:100%;
+    background-image: url(/medias/sys_master/root/ha6/h97/10789961433118/background-lightgray.png);
+    background-repeat: no-repeat;
+    background-position: 45% 100%;
+    padding-bottom: 120px;
+    background-size: 100% 58%;
+}
+
+
+.paper {
+    flex-direction: column;
+}
+
+.paper > div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paper .chat-bot {
+    width: 170px;
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+.paper img {
+    width: 97%;
+    transition: 0.3s;
+    transform: scale(1);
+}
+
+.paper img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.heart {
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart h2 {
+    text-align: center;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+/* .chat-bot {
+    width:130px;
+    color:#333333;
+} */
+
+.chat-bot:hover * {
+    transition: none;
+    transform: none;
+    color:#333333;
+}
+
+.chat-bot:hover {
+    border:2px solid #F37021;
+}
+
+.chat-bot:hover svg {
+    fill:#000;
+}
+
+.iphone .chat-bot.second {
+    display:none;
+}
+
+.heart .chat-bot.second {
+    display:none;
+}
+
+.heart img {
+    width:60%;
+}
+
+@media screen and (max-width:1000px) {
+
+    
+.top-block, .paper, .heart {
+    width:100%;
+}
+
+.gray {
+    display:none;
+}
+
+.steps, .pizza, .podarki, .iphone  {
+    margin-top: 60px;
+}
+
+.paper, .heart {
+    margin-top: 0;
+}
+
+.summer h2 {
+    font-size: 5vw;
+    font-weight: normal;
+    line-height: inherit;
+    padding-bottom: 20px;
+    color:#333333;
+
+}
+
+.summer h3 {
+    font-size: 3vw;
+    line-height: inherit;
+}
+
+.header {
+    margin-top:auto;
+    /* background-size: 80% 80%; */
+}
+
+
+.header > img {
+    align-self:flex-start;
+    width: 45%;
+}
+
+.header > div {
+    padding-left:25px;
+}
+
+.header ul li span {
+    margin-left: 0;
+}
+
+.brands {
+    margin-top: 20px;
+    width:90%;
+    
+}
+
+.brands img {
+    height: 90px;
+}
+
+.header ul li, .list ol li, .summer p {
+    font-size: 2.2vw;
+    line-height: 1.6;
+}
+
+.action-date div:first-child {
+    padding-left:25px;
+    width:50%;
+}
+
+.action-date .date {
+    padding: 40px 30px 0 40px;
+    font-size: 2.3vw;
+    line-height: 1.6;
+}
+
+.notes {
+    font-size: 2.1vw;
+    line-height: 1.5;
+}
+
+.steps + .notes  {
+    padding-left:25px;
+    margin-top: 15px;
+}
+
+.list {
+    padding: 25px;
+}
+
+.steps img {
+    width: 30%;
+}
+
+.border {
+    font-size: 3vw;
+    line-height: inherit;
+}
+
+
+.pizza {
+    background-size: 65% 90%;
+    background-position: 35% 100%;
+}
+
+.pizza img {
+    width: 40%;
+    align-self: flex-end;
+}
+
+.pizza > div:first-child {
+    padding-left:25px;
+}
+
+.pizza p {
+    padding-bottom:20px;
+}
+
+.paper .chat-bot {
+    /* width: 100px; */
+    margin-left: 30px;
+    margin-top: 50px;
+
+}
+
+.chat-bot {
+    display:none!important;
+}
+
+.heart h2 {
+     margin-top: 0; 
+}
+} 
+
+@media screen and (max-width:500px) {
+
+.steps, .pizza, .podarki, .iphone, .paper, .paper > div, .heart {
+    flex-direction:column;
+}
+
+
+.summer h2 {
+    font-size: 10vw;
+    line-height: 1.1;
+    padding-bottom: 30px;
+}
+
+.summer .header h2 {
+    font-size: 12vw;
+    
+}
+
+.summer h3 {
+    font-size: 6.3vw;
+}
+
+.header {
+        flex-direction: column;        
+    }
+
+.header > div {
+     padding-right: 25px;
+}
+
+ .header img.woman {
+    display:none;
+}
+
+.header img.woman1 {
+    display:block;
+}
+
+.header > div {
+        order:2;
+    }
+
+    .header > img {
+    align-self: center;
+    width: 100%;
+    order:1;
+    margin-bottom: 30px;
+}
+
+.header {
+    background:none;
+}
+
+.action-date .date {
+    display:none;
+}
+
+.header ul li, .list ol li, .summer p {
+    font-size: 5.5vw;
+    line-height: 1.5;
+}
+
+.summer p {
+    color:#333333;
+}
+
+.header ul li {
+    list-style-type: none;
+    margin-left: 0;
+    border-left: 2px solid;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.brands {
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.brands img {
+    height: 100px;
+}
+
+.notes {
+    font-size: 4.2vw;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.chat-bot {
+   margin: 0 auto;
+}
+
+.chat-bot svg {
+    right: -50px;   
+}
+
+.action-date div:first-child { 
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 25px;
+}
+
+.list {
+    text-align: center;
+}
+
+.list h3 {
+     margin-top: 20px;
+}
+
+.list ol li {
+    flex-direction: column;
+}
+
+.list ol li span {
+    padding-left: 0;
+}
+
+.list ol li:before {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.border {
+    font-size: 6.3vw;
+}
+
+.steps img {
+     display: none;
+}
+
+.steps + .notes {
+    margin-top: 0;
+    background: #F4F4F4;
+    width:auto;
+    padding-right:25px;
+    padding-bottom: 40px;
+}
+
+
+
+.pizza .border {
+    font-size: 5.1vw;
+}
+
+.pizza > img {
+    width: 92%;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.pizza > div > img {
+    margin-bottom: 20px;
+}
+
+.pizza {
+    background-size: 85% 93%;
+    background-position: 100% 100%;
+}
+
+
+.podarki {
+    margin-top: 80px;
+}
+
+.podarki > div {
+     width: 85%;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.podarki p {
+    margin: 0 25px 30px;
+    font-size: 5vw;
+}
+
+
+.iphone > div  {
+    width: auto;
+    padding-right:25px;
+    padding-left:25px;
+    order:1;
+}
+
+.iphone > img {
+    width: 93%;
+    order:2;
+    margin-top: 30px;
+}
+
+.iphone .chat-bot.first {
+    display:none;
+}
+
+.iphone .chat-bot.second {
+    display:block;
+    order:3;
+}
+
+
+.iphone .chat-bot {
+    margin: 50px 65px 0 20px;
+    width:auto;
+}
+
+
+
+.iphone .chat-bot p, .heart .chat-bot p {
+    margin: auto 0 auto -10px;
+    font-size:5vw;
+
+}
+
+.iphone h3 {
+    padding-bottom: 15px;
+}
+
+.iphone > div > p {
+    font-size: 5vw;
+}
+
+.iphone  {
+    background-position: 0 0;
+    background-size: 70% 70%;
+    margin-top: 45px;
+    padding-bottom: 10px;
+}
+
+
+.bottom-block {
+    background:none;
+}
+
+.paper h2 {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom:50px;
+    margin-bottom:0;
+}
+
+.paper img {
+    width: 80%;
+    transition: none;
+    transform: none;
+    margin-left: 50px;
+}
+
+.paper .chat-bot {
+    width: 110px;
+    margin: 20px auto 60px;
+}
+
+
+.heart img {
+    display:none;
+}
+
+.heart .chat-bot.first {
+    display:none;
+}
+
+.heart .chat-bot.second {
+    display:block;
+}
+
+.heart .chat-bot {
+    margin: 50px 65px 0 0px;
+    width: 200px;
+}
+
+.heart .chat-bot svg {
+    right: -60px;
+}
+
+.bottom-block {
+    padding-bottom: 0;
+}
+
+.heart {
+    margin-top: 0;
+}
+
+.heart {
+background-image: url(/medias/sys_master/root/ha6/h97/10789961433118/background-lightgray.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-bottom: 0;
+    background-size: 85% 70%;
+}
+
+.heart h2 {
+    text-align: left;
+    width: 80%;
+    padding-top: 80px;
+    padding-left: 20px;
+    align-self: flex-start;
+}
+}

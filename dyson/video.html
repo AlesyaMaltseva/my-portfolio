@@ -1,0 +1,75 @@
+<video src="pics/video/Keflavik.mp4" poster="pics/main/Main-03.png" controls></video>
+
+
+
+<br><br><br><br>
+
+<!--
+<iframe width="864" height="486" src="https://rutube.ru/play/embed/7716bd3e665725c3c008ae7ab4ff02e2?skinColor=e53935&t=300&stopTime=480" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>  <p><a href="https://rutube.ru/video/7716bd3e665725c3c008ae7ab4ff02e2/">«Тотальный футбол»: топовый дебют Миранчука, как поменять наш футбол – реформы Гогниева</a> от <a href="//rutube.ru/metainfo/tv/23137/">Тотальный футбол</a> на <a href="https://rutube.ru/">RUTUBE</a>-->
+
+
+
+
+<iframe width="560" height="315" src="https://rutube.ru/video/private/6a819a275c675dacae799e86eba49fe3/?p=QeQozgVHzg0nB5tP6PzI0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+https://youtu.be/IUSFpS9AFzk
+
+
+https://www.komus.ru/medias/sys_master/root/h8e/h0a/10482795479070/Main-03.png
+    <iframe width="560" id="dyson" height="315" src="https://rutube.ru/video/private/6a819a275c675dacae799e86eba49fe3/?p=QeQozgVHzg0nB5tP6PzI0g"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+var my_video = document.getElementById("youtube");
+var my_video = my_video.getElementsByTagName("iframe")[0].contentWindow;
+	my_video.postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
+	
+if(!window.YT)var YT={loading:0,loaded:0};if(!window.YTConfig)var YTConfig={host:"https://www.youtube.com"};YT.loading||(YT.loading=1,function(){var o=[];YT.ready=function(n){YT.loaded?n():o.push(n)},window.onYTReady=function(){YT.loaded=1;for(var n=0;n<o.length;n++)try{o[n]()}catch(i){}},YT.setConfig=function(o){for(var n in o)o.hasOwnProperty(n)&&(YTConfig[n]=o[n])}}());
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://www.rutube.ru/iframe_api"></script>
+
+<style>
+#click-for-video {
+  width: 640px;
+  height: 480px;
+  cursor: pointer;
+}
+ 
+#youtube {
+  display: none;
+}
+</style>
+
+
+  <div id="click-for-video">
+    <img src="https://www.komus.ru/medias/sys_master/root/h8e/h0a/10482795479070/Main-03.png" />
+  </div>
+  <div id="youtube">
+    <iframe src="https://rutube.ru/video/private/6a819a275c675dacae799e86eba49fe3/?p=QeQozgVHzg0nB5tP6PzI0g"  frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  </div>
+  
+ <div id="player"></div>
+ 
+<script>
+
+document.getElementById('click-for-video').addEventListener('click', hideDivs);
+function hideDivs()
+{
+    document.getElementById('click-for-video').style.display = 'none';
+    document.getElementById('youtube').style.display = 'block';
+	var my_video = document.getElementById("youtube");
+    var my_video = my_video.getElementsByTagName("iframe")[0].contentWindow;
+	my_video.postMessage('{"event": "command", "func": "playVideo", "origin":"https://www.komus.ru/", "args": ""}', "*");
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+

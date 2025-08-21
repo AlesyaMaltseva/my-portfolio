@@ -1,0 +1,23 @@
+#home {
+    position: fixed;
+    background-color:#5ec163;
+    color:white;
+    background-image: url('../img/home.svg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:40px;
+    height:40px;
+    top:70px;
+    border-radius: 0 5px 5px 0;
+    z-index: 100;
+    opacity: 0.8;
+    transition: 0.3s;
+    
+}
+
+#home:hover {
+    opacity: 1;
+}
+
+
