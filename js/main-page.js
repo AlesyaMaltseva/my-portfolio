@@ -1,90 +1,13 @@
-let clouds = ['img/cloud1.svg', 'img/cloud2.svg', 'img/cloud3.svg', 'img/cloud4.svg', 'img/cloud5.svg'];
-function howClouds(max,min) {
-   let cloudsInt = Math.floor(Math.random()*(max-min)+min);
-   return cloudsInt;
-};
-function getClouds(brt) { 
-     for(i=0;i<brt;i++) {
-          $('#clouds').append('<img src="'+clouds[howClouds(clouds.length,0)]+'" />');        
-        };  
-    $("#clouds img").each(function () {
-        let randomtop = Math.floor(Math.random() * ($('#clouds').height() - $(this).height() - 20)),
-            randomleft = Math.floor(Math.random() * ($('#clouds').width() - $(this).width() - 20)),
-            randomzindex = Math.floor(Math.random() * 50);
-        $(this).css({
-            "top": randomtop,
-            "left": randomleft,
-            "z-index": randomzindex,
-        });
 
-        $(this).on('mouseenter', function() {            
-        $(this).css({'opacity':'0.8'});
-    })
-
-    $(this).on('click', function() {
-//          $(this).get(0).animate([{"transform": "scale(1.5)","opacity":"1"}],
-// {duration: 200,easing:'linear'});
-        $(this).get(0).animate([{"transform": "scale(0)","opacity":"1"}],
-{duration: 300,easing:'linear'});       
-
-setTimeout(() => $(this).remove(),250);
-    })
-
-    $(this).animate({'opacity':'0.4'},300,'linear');
-        $(this).animate({'left':'+=50','top':'-=10','opacity':'0.5'},5000,'linear');
-        $(this).animate({'left':'+=40','top':'+=20'},5000,'linear');
-        $(this).animate({'left':'+=30','top':'-=20'},5000,'linear');
-        $(this).animate({'left':'+=40','top':'-=20','opacity':'0'},5000,'linear');
-       
-        setTimeout(() => $(this).remove(),20000);
-
-    })}
 
 
 $(document).ready(function() {
 
-    getClouds(4);
-
-    setInterval(() => getClouds(2),3000);
+   
     
-// Формирование классов slide
 $('.templates > div').addClass('slide');
 $('.templates > div > div').addClass('slide2');
-//$('.slide2').after('<div class="backg"></div>');
-//$('.backg').css('display','block');
-//let winW = $(window).width();
-//let maskWidth = $('.slide2').css('-webkit-mask-size');
 
-
-
-// Start templates
-  // const slider = document.querySelector('.templates');
-  // let isDown = false;
-  // let startX;
-  // let scrollLeft;
-
-  // slider.addEventListener('mousedown', (e) => {
-  //   isDown = true;
-  //   slider.classList.add('active');
-  //   startX = e.pageX - slider.offsetLeft;
-  //   scrollLeft = slider.scrollLeft;
-  // });
-  // slider.addEventListener('mouseleave', () => {
-  //   isDown = false;
-  //   slider.classList.remove('active');
-  // });
-  // slider.addEventListener('mouseup', () => {
-  //   isDown = false;
-  //   slider.classList.remove('active');
-  // });
-  // slider.addEventListener('mousemove', (e) => {
-  //   if(!isDown) return;
-  //   e.preventDefault();
-  //   const x = e.pageX - slider.offsetLeft;
-  //   const walk = (x - startX) * 1; //scroll-fast
-  //   slider.scrollLeft = scrollLeft - walk;
-  //   });
-  // End templates     
 
 
   let threeCells;
@@ -138,45 +61,14 @@ if (isMobile) {
 
       
   }
-  // console.log($('.slide').first().offset().left) 
+ 
 }
 
 setInterval(() => getOffset(), 50);
 
 
 
-  // if($('.slide').first().offset().left != 0) {
-  //$('.slide').first().left = 0;
-  
-  // }
-// console.log($('.slide').first().offset().left)
- 
-    //   let plusWidthS = $('.slide').first().width(); // Ширина первого slide
-    //   let plusWidthL = $('.slide').last().width(); // Ширина последнего slide 
-
-    //   widthT = $('.templates').width(); // Ширина templates
-      
-    //   let smotrimF = $('.slide').first().offset(); //
-    //   let smotrimL = $('.slide').last().offset();
-    //   let smotrimLEnd = smotrimL.left + plusWidthS;
-    //   let smotrimTl = $('.templates').offset();
-    //   let smotrimTr = smotrimTl.left + widthT;
-              
-    //   $('#smotrimF span').text(smotrimF.left);
-    //   $('#smotrimL span').text(smotrimL.left);
-    //   $('#smotrimLEnd span').text(smotrimLEnd);
-    //   $('#smotrimWs span').text(plusWidthS);
-    //   $('#smotrimTl span').text(smotrimTl.left);
-    //   $('#smotrimTr span').text(smotrimTr);
-    //   $('#smotrimW span').text(widthT);
-
-    // firstSlideLeft = $('.slide').first().offset().left;
-    // templateLeft = $('.templates').offset().left;
-    // templateRight = firstSlideLeft+widthT;
-    // lastSlideRight = $('.slide').last().offset().left+$('.slide').last().width();
-  
-
-   
+     
     
 // Кнопки слвйдов
 
@@ -257,7 +149,5 @@ $(window).resize(function() {
 
 
 // Кнопка Показать все
-
-
 
 });

@@ -22,12 +22,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	width:100%;
 	min-height: 100vh;
-	background-image: url('../img/grass.svg');
-	background-repeat: repeat-x;
-	background-position: bottom;
-	background-size: 55vh;
-	/* padding-bottom:50px; */
-	/* overflow-x: hidden; */
+	background-color: #b843a4;	
 }
 
 body::-webkit-scrollbar { 
@@ -43,14 +38,23 @@ body::-webkit-scrollbar {
 }
 
 .about {
-	font-size:1.5rem;
-	text-align: center;
-	
+	font-size:1.65rem;
+	text-align: center;	
 	color:white;
 	width:100%;
 	padding:55px 0 45px;
-	z-index: 100;	
+	z-index: 100;
+	overflow-y: hidden;	
 }
+
+.about h1 {
+	font-size: 1.7em;
+	font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  display: none;
+} 
 
 
 @keyframes  who {
@@ -60,13 +64,13 @@ body::-webkit-scrollbar {
 } 
 
 .who {
-	width:70%;
-	text-shadow: 1px 1px #39913d;
+	width:70%;	
 	animation: who 1s; 
 }
 
 #main-block {
-	margin:25px 0 50px;	
+	margin:90px 0 50px;	
+	opacity: 0;
 }
 
 .wrapper {
@@ -83,7 +87,6 @@ body::-webkit-scrollbar {
 .seeall span {
   padding:8px 15px;
   border-radius:7px;
-  background-color: #5ec163;
   border: 1px solid white;
   color:white;
   display: inline-block;
@@ -92,10 +95,10 @@ body::-webkit-scrollbar {
 }
 
 .seeall span:hover {
-	color:#5ec163;
+	color:#4e4e4e;
+	background-color: rgb(75, 75, 75);
+	border: 1px solid rgb(75, 75, 75);
 	background-color: white;
-	border: 1px solid #5ec163;
-	background-color: #e3ffe4;
 }
 
 .buttons {
@@ -206,9 +209,9 @@ button.next {
 	user-select:none;
 	overflow-y: hidden;
 	transition: 0.4s;
-	background-color: rgba(94, 193, 99, 0.9);;	
-	text-shadow: 1px 1px #61a064;
-	border-radius: 8px 0 0 8px;
+	background-color: rgba(75, 75, 75, 0.9);	
+	
+	border-radius: 0px 0 0 0px;
 	text-decoration: none;
 }
 
@@ -273,7 +276,7 @@ button.next {
 }
 
 .mobview .templates .slide2 a {
-	color: #5ec163;
+	color: white;
 	text-shadow: none;
 	text-decoration: underline;
 	padding:15px 5px;
@@ -288,7 +291,6 @@ button.next {
 	object-fit: cover;
 	height: 100%;
 	border-radius: 6px;
-	border:1px solid #cacaca;
 	}
 
 @keyframes rotate360 {
@@ -311,10 +313,8 @@ button.next {
 }
 
 #clouds {
-	/* height:230px; */
 	overflow: hidden;
 	box-sizing: border-box;
-	background-color: #5ec163;
 	position: relative;
 	z-index: 0;	
   }
